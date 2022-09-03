@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  color: #4181ee;
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: red;
+  box-sizing: border-box;
+  max-width: 300px;
+  min-height: 300px;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.card:nth-child(even) {
+  background-color: purple;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.cardImageContainer img {
+  width: 100%;
+}
+.cardContent {
+  margin: 10px 0;
+  color: white;
+}
+.cardContentTitle {
+  margin-bottom: 10px;
+}
+.cardContentInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.cardContentInfo .infoPrice {
+  background-color: #303032;
+  padding: 5px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

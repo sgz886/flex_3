@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+//$main-color: #2eca7f;
+//$font-dark-color: #333;
+
+
+@import "theme.scss";
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.card_container {
+  padding: 30px;
+  background-color: #eee;
+  height: 1000px;
+}
+
+.card {
+  margin: 0 auto;
+  min-width: 900px;
+  width: 1000px;
+  min-height: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  &_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $main-color;
+    color: white;
+    padding: 12px 10px;
+    text-transform: capitalize;
+    border-radius: 10px 10px 0 0;
+
+    &_left {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 75px;
+        margin: 15px;
+      }
+    }
+
+    &_right {
+      p {
+        font-size: 14px;
+        font-weight: $font-weight-bold;
+        margin-bottom: 5px;
+      }
+
+      i {
+        font-size: 12px;
+        color: $main-color;
+        padding: 7px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+    }
+
+  }
+}
+
+.card_content {
+  display: grid;
+  grid-template-columns:repeat(3, auto);
+
+  ul {
+    width: 160px;
+    padding: 25px;
+    border-right: 1px solid #ddd;
+
+    li {
+      position: relative;
+      color: $font-dark-color;
+      padding: 20px 0;
+      font-size: 15px;
+      text-transform: capitalize;
+      font-weight: $font-weight-bold;
+
+      i {
+        margin-right: 10px;
+      }
+    }
+
+    .active {
+      color: $main-color;
+    }
+
+    .active::before {
+      position: absolute;
+      bottom: 30px;
+      left: -25px;
+      content: "";
+      width: 20px;
+      height: 2px;
+      background-color: $main-color;
+    }
+  }
+
+  .image {
+    width: 500px;
+    padding: 30px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: $font-dark-color;
+    padding: 25px;
+
+    h3 {
+      width: 100%;
+      font-weight: $font-weight-bold;
+    }
+
+    p {
+      font-size: 14px;
+      color: $font-dark-color;
+      margin: 10px 0;
+      span{
+        font-weight: $font-weight-bold;
+      }
+    }
+    .btnContainer {
+      width: 100%;
+    }
+  }
+}
